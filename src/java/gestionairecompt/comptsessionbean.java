@@ -5,6 +5,7 @@
  */
 package gestionairecompt;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import comptbancaire.CompteBancaire;
 import java.util.Collection;
 import javax.ejb.Stateless;
@@ -24,6 +25,8 @@ public class comptsessionbean {
 public void creeUnCompteDeTest() {
         creeUnCompte("John", "Lennon", "1234c", 10000000);
         creeUnCompte("Youan", "Bi Youan", "5555c", 20000000);
+        creeUnCompte("Touré", "Abdoul", "4444c", 100000);
+        creeUnCompte("Keita", "Mamady", "2222c", 20000000);
     }
 
     public CompteBancaire creeUnCompte(String firstName,String lastName,String accountNumber, double balance) {
@@ -37,5 +40,6 @@ public void creeUnCompteDeTest() {
         Query q = em.createQuery("select compt from CompteBancaire compt");
         return q.getResultList();
     }
+
 }
 
