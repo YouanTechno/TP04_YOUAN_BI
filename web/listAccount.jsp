@@ -14,15 +14,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="backliste.css">
     </head>
     <body>
-         <h1>Gestionnaire d'utilisateurs</h1>
+        <div align="center">
+         <h1 id="titre">Gestion des Compts Bancaire</h1>
       
         <!-- Message qui s'affiche lorsque la page est appelé avec un paramètre http message -->
 
-        <h2>Menu de gestion des utilisateurs</h2>
+        <h2>Menu de gestion des Comptes</h2>
         <ul>
-            <li><a href="servlet?action=listeAccount">Afficher/raffraichir la liste de tous les utilisateurs</a></li>
+            <a href="servlet?action=listeAccount" id="lien">Afficher/raffraichir la liste de tous les Compts</a>
             <p>
         </ul>
            
@@ -30,8 +32,8 @@
 
         <!-- Zone qui affiche les utilisateurs si le paramètre action vaut listerComptes -->
         <c:if test="${param['action'] == 'listeAccount'}" >
-            <h2>Liste des utilisateurs</h2>
-
+            <h2>Liste des Comptes</h2>
+            <div id="tab">
             <table border="10">
                 <!-- La ligne de titre du tableau des comptes -->
                 <tr>
@@ -59,8 +61,10 @@
                 <!-- Affichage du solde total dans la dernière ligne du tableau -->
                 <tr><td><b>TOTAL</b></td><td></td><td><b>${total}</b></td><td></td></tr>
             </table>
+            </div>
             <br>
             <h3><a href="newAccount.jsp">Ajouter un compte</a></h3> 
         </c:if>
+            </div>
     </body>
 </html>

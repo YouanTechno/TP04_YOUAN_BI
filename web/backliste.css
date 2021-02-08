@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 févr. 2021, 10:34:01
+    Author     : youan
+*/
+
+body {
+color:black;
+background-color:black;
+background-image:url(images/bankback.jpg);
+}
+#tab{
+    width: 350px;
+    height: auto;
+    background-color:white;
+    border: 3px solid bisque;
+    margin: 0px auto;
+}
+
+#tab2{
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    border: 5px solid #333;
+    margin: 0px auto;
+}
+#titre{
+    color:white;
+}
+#titre2{
+    width: 300px;
+    height: auto;
+    background-color:white;
+    color:orange;
+}
+#lienp{
+    width: 300px;
+    height: auto;
+    background-color:white;
+    margin-top: 80px;
+}
+#lien{
+    width: auto;
+    height: auto;
+    background-color:white;
+    border: 5px  #20;
+    margin: 0px auto;
+}
+
+#page2{
+    color:black;
+    background-color:black;
+    background-image:url(images/bankback3.jpg);
+}
